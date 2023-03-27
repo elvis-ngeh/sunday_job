@@ -37,7 +37,7 @@ jobs:
         run: sudo npm install -g semantic-release
         env: 
           GITHUB_TOKEN: ${{secrets.ELSHUB_TOKEN}}
-#      - name: Terraform apply 
-#        run: terraform apply -auto-approve
+      - name: Terraform apply 
+        run: terraform apply -auto-approve
 #      - name: Terraform destroy
 #        run: terraform destroy -auto-approve  
